@@ -1,0 +1,284 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Scheduler/NuGetTrends.Scheduler.csproj": {}
+  },
+  "projects": {
+    "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/NuGet.Protocol.Catalog.csproj": {
+      "version": "0.2.0-beta",
+      "restore": {
+        "projectUniqueName": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/NuGet.Protocol.Catalog.csproj",
+        "projectName": "NuGet.Protocol.Catalog",
+        "projectPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/NuGet.Protocol.Catalog.csproj",
+        "packagesPath": "/Users/ksuzy31/Kev-Stuff/.nuget/packages/",
+        "outputPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ksuzy31/Kev-Stuff/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20204-02, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "NuGet.Protocol": {
+              "target": "Package",
+              "version": "[5.10.0, )"
+            },
+            "Sentry": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "UnoptimizedAssemblyDetector": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/NuGetTrends.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/NuGetTrends.Data.csproj",
+        "projectName": "NuGetTrends.Data",
+        "projectPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/NuGetTrends.Data.csproj",
+        "packagesPath": "/Users/ksuzy31/Kev-Stuff/.nuget/packages/",
+        "outputPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ksuzy31/Kev-Stuff/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/NuGet.Protocol.Catalog.csproj": {
+                "projectPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGet.Protocol.Catalog/NuGet.Protocol.Catalog.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20204-02, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "UnoptimizedAssemblyDetector": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Scheduler/NuGetTrends.Scheduler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Scheduler/NuGetTrends.Scheduler.csproj",
+        "projectName": "NuGetTrends.Scheduler",
+        "projectPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Scheduler/NuGetTrends.Scheduler.csproj",
+        "packagesPath": "/Users/ksuzy31/Kev-Stuff/.nuget/packages/",
+        "outputPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Scheduler/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ksuzy31/Kev-Stuff/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/NuGetTrends.Data.csproj": {
+                "projectPath": "/Users/ksuzy31/Kev-Stuff/monorepo-itrust/nuget/src/NuGetTrends.Data/NuGetTrends.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.24, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "MessagePack": {
+              "target": "Package",
+              "version": "[2.2.85, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-beta-20204-02, )"
+            },
+            "NuGet.Client": {
+              "target": "Package",
+              "version": "[4.3.0-beta1-2418, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Sentry.AspNetCore": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Sentry.Serilog": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.1-dev-00229, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.1-dev-00787, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.1-dev-00879, )"
+            },
+            "UnoptimizedAssemblyDetector": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
