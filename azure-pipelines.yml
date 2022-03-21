@@ -39,6 +39,6 @@ steps:
       ls -l
       chmod +x snyk-scan.sh
       md5sum snyk-scan.sh
-      ./snyk-scan.sh --mode=test --type=javascript
+      sudo ./snyk-scan.sh --mode=test --type=javascript
   displayName: 'Snyk-scan.sh'
 
