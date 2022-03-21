@@ -25,10 +25,10 @@ steps:
 #    npm run build
 #  displayName: 'npm install and build'
 
-#- script: |
-#    sudo npm install -g snyk
-#    sudo npm install snyk-to-html -g
-#  displayName: 'snyk install'
+- script: |
+    sudo npm install -g snyk
+    sudo npm install snyk-to-html -g
+  displayName: 'snyk install'
 
 - script: |
       sudo snyk auth $(SNYK_TOKEN)
