@@ -23,15 +23,15 @@ steps:
 - script: |
     sudo npm install -g snyk
     sudo npm install snyk-to-html -g
-    displayName: 'snyk install'
+  displayName: 'snyk install'
 
 - script: |
       sudo snyk auth $(SNYK_TOKEN)
-      displayName: 'Snyk auth'
+  displayName: 'Snyk auth'
 
 - script: |
       sudo curl -Los  https://raw.githubusercontent.com/snyk-tech-services/snyk-scan.sh/main/snyk-scan.sh
-      displayName: 'Snyk-scan.sh curl'
+  displayName: 'Snyk-scan.sh curl'
 
 - task: Bash@3
   inputs:
@@ -40,5 +40,5 @@ steps:
 
 - script: |
     sh './snyk-scan.sh --mode=test --type=javascript'
-    displayName: 'Snyk-scan.sh'
+  displayName: 'Snyk-scan.sh'
 
