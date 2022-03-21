@@ -10,6 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+  displayName: 'Install Bash'
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -33,14 +38,6 @@ steps:
       sudo curl -Los  https://raw.githubusercontent.com/snyk-tech-services/snyk-scan.sh/main/snyk-scan.sh
       ls -l
       chmod +x snyk-scan.sh
-  displayName: 'Snyk-scan.sh curl'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-  displayName: 'Install Bash'
-
-- script: |
-    sh './snyk-scan.sh --mode=test --type=javascript'
+      sh './snyk-scan.sh --mode=test --type=javascript'
   displayName: 'Snyk-scan.sh'
 
