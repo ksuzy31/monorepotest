@@ -40,7 +40,6 @@ steps:
       chmod +x snyk-scan.sh
       md5sum snyk-scan.sh
       sudo ./snyk-scan.sh --mode=test --type=javascript > results.js.json 
-      snyk-to-html -i results.js.json -o results.js.html
-#      sudo ./snyk-scan.sh --mode=test --type=dotnet > results.dotnet.json | snyk-to-html -i results.dotnet.json -o results.dotnet.html
+      sudo ./snyk-scan.sh --mode=test --type=dotnet > results.dotnet.json 
   displayName: 'Snyk-scan.sh'
 
