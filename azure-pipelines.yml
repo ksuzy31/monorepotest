@@ -40,5 +40,6 @@ steps:
       chmod +x snyk-scan.sh
       md5sum snyk-scan.sh
       sudo ./snyk-scan.sh --mode=test --type=javascript
+      sudo ./snyk-scan.sh --mode=test --type=dotnet
   displayName: 'Snyk-scan.sh'
 
