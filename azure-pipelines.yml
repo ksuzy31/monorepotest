@@ -38,8 +38,7 @@ steps:
       sudo curl -Los  https://raw.githubusercontent.com/snyk-tech-services/snyk-scan.sh/main/snyk-scan.sh
       ls -l
       chmod +x snyk-scan.sh
-      md5sum snyk-scan.sh
-      sudo ./snyk-scan.sh --mode=test --type=javascript > results.js.json 
-      sudo ./snyk-scan.sh --mode=test --type=dotnet > results.dotnet.json 
+      sudo ./snyk-scan.sh --mode=test --type=javascript
+#      sudo ./snyk-scan.sh --mode=test --type=dotnet > results.dotnet.json 
   displayName: 'Snyk-scan.sh'
 
