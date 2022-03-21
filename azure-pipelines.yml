@@ -34,6 +34,8 @@ steps:
   displayName: 'Snyk-scan.sh curl'
 
 - task: Bash@3
+variables:
+  BASH_ENV: "/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   inputs:
     targetType: 'inline'
   displayName: 'Install Bash'
