@@ -31,11 +31,11 @@ steps:
 
 - script: |
       sudo curl -Los  https://raw.githubusercontent.com/snyk-tech-services/snyk-scan.sh/main/snyk-scan.sh
+      ls -l
+      chmod +x snyk-scan.sh
   displayName: 'Snyk-scan.sh curl'
 
 - task: Bash@3
-variables:
-  BASH_ENV: "/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   inputs:
     targetType: 'inline'
   displayName: 'Install Bash'
