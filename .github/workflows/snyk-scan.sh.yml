@@ -1,7 +1,7 @@
 name: Using snyk-scan to scan monorepos
 on: push
 jobs:
-  Snyk-scan.sh:
+  Snyk-scan:
     runs-on: ubuntu-latest
     
 #    strategy:
