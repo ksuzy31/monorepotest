@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run snyk-scan.sh
+      - uses: snyk/actions/setup@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
