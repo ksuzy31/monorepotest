@@ -20,3 +20,6 @@ jobs:
           ls -l
           sudo chmod +x snyk-scan.sh
           sudo ./snyk-scan.sh --mode=test --type=javascript
+      - name: Run snyk-scan.sh for dotnet
+        run: |
+          sudo ./snyk-scan.sh --mode=test --type=dotnet
