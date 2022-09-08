@@ -2,9 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: monorepotest
+  title: Monorepotest # optional, human readable component name
+  description: Monorepotest is my first Backstage catalog item.
   annotations:
     github.com/project-slug: ksuzy31/monorepotest
 spec:
-  type: other
-  lifecycle: unknown
-  owner: guests
+  type: service
+  owner: user:ksuzy31
+  lifecycle: experimental
